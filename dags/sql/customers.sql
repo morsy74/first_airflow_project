@@ -1,0 +1,12 @@
+INSERT INTO customers values('698352183', 'Morsy', 'Egypt', '1995-08-12');
+INSERT INTO customers values('698952183', 'Ali', 'Egypt', '1992-01-13');
+INSERT INTO customers values('698852183', 'Mohamed', 'Egypt', '1991-09-18');
+INSERT INTO customers values('698352183', 'Salem', 'Egypt', '1997-10-24');
+INSERT INTO customers values('698352188', 'Sara', 'Egypt', '1998-12-30');
+INSERT INTO customers values('698352183', 'Mousa', 'Egypt', '1994-11-29');
+INSERT INTO customers values('698359183', 'Bakr', 'Egypt', '1995-04-22');
+INSERT INTO customers values('688342183', 'Salma', 'Egypt', '1995-08-21');
+INSERT INTO customers values('698354183', 'Yara', 'Egypt', '1993-03-03');
+INSERT INTO customers values('698652183', 'Noha', 'Egypt', '1996-05-05');
+INSERT INTO customers values('678352183', 'Rezk', 'Egypt', '1979-10-09');
+INSERT INTO customers values('698252193', 'Gomaa', 'Egypt', '1989-09-20');
