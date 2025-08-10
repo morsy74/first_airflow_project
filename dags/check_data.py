@@ -1,8 +1,11 @@
+import requests
 from airflow import DAG # type: ignore
 from datetime import timedelta, datetime
 from airflow.providers.postgres.operators.postgres import PostgresOperator # type: ignore
 from airflow.sensors.sql import SqlSensor # type: ignore
 from airflow.operators.python import PythonOperator # type: ignore
+from airflow.operators.email import EmailOperator
+from airflow.utils.trigger_rule import TriggerRule
 
 def processing_data() :
   print("records exists")
@@ -22,8 +25,7 @@ with DAG(
     sql=''' select * from brokers where broker_name = 'efwef'; ''',
     poke_interval=10,
     timeout=30,
-    mode="reschedule",
-    soft_fail=True
+    mode="reschedule"
   )
 
   processing_data=PythonOperator(
@@ -32,3 +34,4 @@ with DAG(
   )
 
   check_records >> processing_data
+

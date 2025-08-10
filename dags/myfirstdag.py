@@ -24,10 +24,10 @@ with DAG(
     '''
   )
 
-  insert_values=PostgresOperator(
-    task_id="insert_customers",
-    postgres_conn_id="postgres_conn",
-    sql='/sql/customers.sql'
-  )
+  # insert_values=PostgresOperator(
+  #   task_id="insert_customers",
+  #   postgres_conn_id="postgres_conn",
+  #   sql='/sql/customers.sql'
+  # )
 
-  create_table >> insert_values
+  # create_table >> insert_values
